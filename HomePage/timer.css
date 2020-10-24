@@ -1,0 +1,38 @@
+.timebox{
+	overflow: hidden;
+	position: relative;	
+	width: 500px;
+	height: 200px;
+	margin: 0 auto 200px;	
+	top:160px;
+	font-family: SimHei;
+	font-size: 185px;
+	color:#fff;
+}
+#ampm{
+	position: absolute;	
+	width: 30px;
+	height: 30px;
+	left: 5px;
+	top:5px;
+	font-size: 25px;
+}
+#u_hour,#d_hour,#u_minute,#d_minute{
+	overflow: hidden;
+	width: 220px;
+	height: 90px;
+	margin-top: 3px;
+	text-align: center;
+	background-color: rgba(0,0,0,.7);
+}
+
+#u_hour,#u_minute{
+	line-height: 182px;
+	}
+#d_hour,#d_minute{
+	line-height: 0px;
+}
+.hour,.minute{
+	float: left;
+	margin-right: 30px;	
+}

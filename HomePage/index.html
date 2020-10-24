@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Designer" content="Svenkie">
+  <meta name="Mail" content="svenky@foxmail.com">
+  <meta name="Description" content="HomePage">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="timer.css" type="text/css"> 
+  <link rel="stylesheet" href="ball.css" type="text/css"> 
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>HomePage</title>
+ </head> 
+ <body id="bgid" onload="changeBg()">
+
+ 
+ 	<nav>
+		<div class="icon"><a href="#"><img src="images/头像.jpg" id="logo" alt=""></a>
+			<span id="username">王储我儿</span>
+		</div>
+		<ul>
+			<li><a href="#">HomePage</a></li>
+			<li></li>
+			<li><a href="#">Menu</a></li>
+			<li></li>
+			<li><a href="#">About</a></li>
+			<li></li>
+			<li><a href="#">Tools</a></li>
+			<li></li>
+			<li><a href="#">History</a></li>
+			<li></li>
+			<li><button onclick="ballBtn()" >Balls</button></li>
+			<li></li>
+			<li><button onclick="changeBg()" >ChangeBg</button></li>
+			<li></li>
+			<li><button onclick="addFocus()" >Notes</button></li>
+		</ul>
+	</nav>
+	<header>
+		<div class="leftbox" id="ltbox">
+			<em><img src="images/clock.svg" alt=""></em>
+			<span id="lttime"></span>
+		</div>
+		<div class="midbox">
+			<form action="http://www.baidu.com/s"  method="get" target="_blank">
+				<input type="search" name="wd" id="seaid" placeholder="Why not ask me ?" autofocus="autofocus" autocomplete="off">
+				<input type="submit" id="subid" value="">
+			</form>
+		</div>
+		<div class="rightbox" id="rtbox"></div>
+	</header>
+	<div class="container">
+		<ul>
+			<li><a href="https://wx.qq.com/" target="_blank"><img src="images/微信.svg" alt=""></a></li>
+			<li><a href="https://s.weibo.com/top/summary?Refer=top_hot&topnav=1&wvr=6" target="_blank"><img src="images/微博.svg" alt=""></a></li>
+			<li><a href="https://space.bilibili.com/401146224/favlist" target="_blank"><img src="images/collect.svg" alt=""></a></li>
+			<li><a href="https://email.163.com/" target="_blank"><img src="images/邮箱.svg" alt=""></a></li>
+			<li><a href="https://env-2g8lpcw570f525ee-1302649481.tcloudbaseapp.com/" target="_blank"><img src="images/相册.svg" alt=""></a></li>
+			<li><a href="https://www.bilibili.com/" target="_blank"><img src="images/哔哩哔哩.svg" alt=""></a></li>
+			<li><a href="https://music.163.com/" target="_blank"><img src="images/网易云.svg" alt=""></a></li>
+			<li><a href="https://mp.weixin.qq.com" target="_blank"><img src="images/公众号.ico" alt=""></a></li>
+			<li><a href="https://tieba.baidu.com" target="_blank"><img src="images/贴吧.svg" alt=""></a></li>
+			<li><a href="http://www.baidu.com" target="_blank"><img src="images/百度.svg" alt=""></a></li>
+			<li><a href="http://www.google.com" target="_blank"><img src="images/chrome.svg" alt=""></a></li>
+			<li><a href="https://pan.baidu.com" target="_blank"><img src="images/百度网盘.svg" alt=""></a></li>
+			<li><a href="https://www.iconfont.cn/" target="_blank"><img style="width:55px;height:55px;" src="images/iconfont.svg" alt=""></a></li>
+			<li><a href="https://www.materialui.co/colors" target="_blank"><img src="images/颜色.svg" alt=""></a></li>
+			<li><a href="https://github.com/" target="_blank"><img src="images/github.svg" alt=""></a></li>
+			<li><a href="https://gitee.com/" target="_blank"><img src="images/码云.svg" alt=""></a></li>
+			<li><a href="https://cloud.tencent.com" target="_blank"><img src="images/腾讯云.svg" alt=""></a></li>
+			<li><a href="https://www.csdn.net/" target="_blank"><img src="images/csdn.svg" alt=""></a></li>
+			<li><a href="https://www.w3school.com.cn/index.html" target="_blank"><img src="images/w3c.svg" alt=""></a></li>
+			<li><a href="http://www.logofree.cn/" target="_blank"><img src="images/LOGO.svg" alt=""></a></li>
+			<li><a href="https://cli.im/" target="_blank"><img src="images/草料.svg" alt=""></a></li>
+			<li><a href="https://www.freecodecamp.org/" target="_blank"><img src="images/codecamp.svg" alt=""></a></li>
+			<li><a href="https://www.v2ex.com/" target="_blank"><img src="images/v2ex.svg" alt=""></a></li>
+			<li><a href="https://www.icourse163.org/" target="_blank"><img src="images/慕课.svg" alt=""></a></li>
+			<li><a href="https://open.163.com/" target="_blank"><img src="images/公开课.svg" alt=""></a></li>
+			<li><a href="https://www.canva.cn/" target="_blank"><img src="images/canvas.svg" alt=""></a></li>
+			<li><a href="https://www.zhihu.com/hot" target="_blank"><img src="images/知乎.svg" alt=""></a></li>
+			<li><a href="https://icomoon.io/" target="_blank"><img src="images/iconmoon.ico" alt=""></a></li>
+			<li><a href="https://www.iqiyi.com/home2020" target="_blank"><img src="images/爱奇艺.svg" alt=""></a></li>
+			<li><a href="https://v.qq.com/" target="_blank"><img src="images/腾讯视频.svg" alt=""></a></li>
+			<li><a href="https://www.runoob.com/" target="_blank"><img src="images/菜鸟.svg" alt=""></a></li>
+			<li><a href="https://www.jd.com" target="_blank"><img src="images/京东.svg" alt=""></a></li>
+			<li><a href="https://www.tmall.com" target="_blank"><img src="images/天猫.svg" alt=""></a></li>
+		</ul>
+	</div>
+	<footer>
+	<span>stay hungry stay foolish</span>
+	<button onclick="getFocus()" class="topbtn">TOP</button>
+	<button  id="note">NOTE</button>
+	<ul>
+		<li><a href="https://mp.weixin.qq.com" target="_blank"><img src="images/公众号.ico" alt=""></a></li>
+		<li><a href="https://www.bilibili.com/" target="_blank"><img src="images/哔哩哔哩.svg" alt=""></a></li>
+		<li><a href="https://github.com/" target="_blank"><img src="images/github.svg" alt=""></a></li>
+		<li><a href="https://pan.baidu.com" target="_blank"><img src="images/百度网盘.svg" alt=""></a></li>
+		<li><a href="https://www.iconfont.cn/" target="_blank"><img src="images/iconfont.svg" alt=""></a></li>
+		<li><a href="https://www.materialui.co/colors" target="_blank"><img src="images/颜色.svg" alt=""></a></li>
+		<li><a href="https://github.com/" target="_blank"><img src="images/github.svg" alt=""></a></li>
+		<li><a href="https://gitee.com/" target="_blank"><img src="images/码云.svg" alt=""></a></li>
+		<li><a href="https://cloud.tencent.com" target="_blank"><img src="images/腾讯云.svg" ></a></li>
+	</ul>
+	</footer>
+	<div id="" class="btm">
+		<textarea id="txt" type="text"  maxlength="25"></textarea>
+		<input type="button" id="add"  value="Add">	
+		<input type="button" id="closeBox" onclick="addFocus()" value="">	
+		<ul class= "notes"></ul>
+	</div>
+	
+	<div class="ballbox"></div>
+	<div class="ballBtns" id="btns">
+		<input type="button" onclick="autoBtn()" class="auto_btn" value="Start">
+		<input type="button" onclick="clearBalls()" class="clear_btn" value="Clear">
+	</div>
+	 <div class="timebox">
+  	<div class="hour">
+		<div id="ampm"></div>
+		<div id="u_hour"></div>
+		<div id="d_hour"></div>
+	</div>
+	<div class="minute">
+		<div id="u_minute"></div>
+		<div id="d_minute"></div>
+	</div>
+<!-- 	<div class="second"> -->
+<!-- 		<div id="u_second"></div> -->
+<!-- 		<div id="d_second"></div> -->
+<!-- 	</div> -->
+  </div>
+
+
+	 <script>
+	 	//创建数组存放背景url
+		var bgs = new Array('url("images/bg01.jpg")','url("images/bg02.jpg")','url("images/bg04.jpg")','url("images/bg05.jpg")','url("images/bg08.jpg")','url("images/bg25.jpg")','url("images/bg09.jpg")','url("images/bg10.jpg")','url("images/bg12.jpg")','url("images/bg13.jpg")','url("images/bg25.jpg")','url("images/bg15.jpg")','url("images/bg17.jpg")','url("images/bg19.jpg")','url("images/bg20.jpg")','url("images/bg21.jpg")','url("images/bg22.jpg")','url("images/bg23.jpg")','url("images/bg25.jpg")');
+		
+		//随机插入背景函数
+		function changeBg(){
+		document.getElementById('bgid').style.backgroundImage = bgs[Math.round(Math.random()* (bgs.length-1))];
+		}
+	 </script>
+
+	 <script >
+			//创建计时器
+			function myFunction(){
+			var time = new Date();
+			y = time.getFullYear();
+			mon = time.getMonth()+1;
+			d = time.getDate();
+			var  h = time.getHours();
+			var ampm = h < 12 ? 'AM' : 'PM';
+			if(h < 10){
+				h = '0' + h;
+			}
+			else if(h >= 12 && h < 22){
+				h = '0' + (h % 12)
+			}else if(h >= 22){
+				h = h % 12;
+			}
+			else{
+				h = h;
+			}
+			
+			var  m = time.getMinutes();
+			m = m < 10 ? '0'+ m : m;
+		
+			var s = time.getUTCSeconds();
+			s = s < 10 ? '0'+ s : s;	
+			
+			
+			var wArr = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+			w = wArr[time.getDay()];
+			//插入顶部时间
+			document.getElementById("rtbox").innerHTML = y +"-"+mon+"-"+d+" "+w;
+			document.getElementById("lttime").innerHTML = ampm +'  '+ h + ":"+m+":"+s;
+			//翻页时钟时间
+			document.getElementById('ampm').innerHTML = ampm;
+			document.getElementById('u_hour').innerHTML = h;
+			document.getElementById('d_hour').innerHTML = h;
+			document.getElementById('u_minute').innerHTML = m;
+			document.getElementById('d_minute').innerHTML = m;
+			//document.getElementById('u_second').innerHTML = s;
+			//document.getElementById('d_second').innerHTML = s;
+
+				//获取元素
+				var txt = document.querySelector('#txt');
+				var btn = document.querySelector('#add');		
+				var ul = document.querySelector('.notes');
+				var colors =['#ef9a9a','#F48FB1','#CE93D8','#B39DDB','#9FA8DA','#90CAF9','#81D4FA','#80DEEA','#80CBC4','#A5D6A7','#C5E1A5','#FFCC80','#FFAB91','#BCAAA4','#B0BEC5'];
+				//注册事件
+				btn.onclick = function(){
+					txt.focus();
+					if(ul.children.length < 8 && txt.value !='' ){
+
+								//创建元素
+					var li = document.createElement('li');
+
+					li.style.backgroundColor = colors[parseInt(Math.random()*(colors.length-1))];
+					//添加元素
+					ul.appendChild(li);
+					li.innerHTML = txt.value + "<p>"+ mon +"-"+ d +" "+ h +":"+ m +" "+ampm+"</p>" + "<a href='javascript:;' style='background:"+ li.style.backgroundColor +"' >Delete</a>";
+					txt.value = '';
+					txt.focus();
+					//删除元素
+					var as = document.querySelectorAll('a');
+					for(var i = 0; i < as.length; i++){
+						as[i].onclick = function (){
+							ul.removeChild(this.parentNode);
+							txt.focus();
+						}
+					}
+						
+					}else if(ul.children.length == 8){
+						txt.value ='';
+						txt.setAttribute('placeholder','只能添加8个便签哦！');
+						txt.focus();
+							
+							}
+					else if(txt.value ==''){
+						txt.setAttribute('placeholder','请输入内容...');
+							txt.focus();
+					}
+				}
+				
+		
+			}
+	
+			//递归调用 每秒调用一次
+
+			setInterval("myFunction()",1000); 
+		
+		</script>
+
+		<script>
+			function getFocus(){
+				document.getElementById('seaid').focus();
+			}
+
+			
+			var btnn = document.querySelector('#note');
+			var div = document.querySelector('.btm');
+			var flag1 = true;
+		function addFocus(){
+				if(!flag1){
+					div.style.transform = 'translateX(0px)';
+					flag1 = true;
+					txt.blur();
+				}else{
+					div.style.transform = 'translateX(570px)';
+					txt.focus();
+					flag1 = false;
+				}
+			}
+			btnn.onclick = function(){
+				addFocus();
+			}
+		</script>
+		
+		
+		<!-- 	弹球		 -->
+		
+		<script>
+		//获取元素
+		var ballbox =document.querySelector('.ballbox');
+		var clearBtn =document.querySelector('.clear_btn');
+		var auto =document.querySelector('.auto_btn');
+		var colors=['#ef9a9a','#F48FB1','#CE93D8','#B39DDB','#9FA8DA','#90CAF9','#81D4FA','#80DEEA','#80CBC4','#A5D6A7','#C5E1A5','#FFCC80','#FFAB91','#BCAAA4','#B0BEC5'];
+		var flag = true;
+		var balls = null;
+		var count = 0;
+			//自动添加 停止添加
+			function autoBtn(){
+				if(flag){
+					timer = setInterval(addBall,150);
+					auto.value ='Stop';
+					auto.style.backgroundColor ='red';
+					flag = false;
+					
+			}else{	
+				clearInterval(timer);
+				auto.style.backgroundColor ='#00ACC1';
+				auto.value ='Start';
+				flag = true;
+				}
+			}
+			 //创建新的
+			function addBall(){
+			 var ball = document.createElement('div');
+			 ball.setAttribute('class','ball'); 
+			 ball.style.background= "radial-gradient(circle at 75px 75px, "+colors[parseInt(Math.random()*colors.length)]+",#fff)";
+			 ballbox.appendChild(ball);	
+			count += 1;
+			
+			 //控制球移动
+		var top = parseInt(Math.random()*400);
+			var left =  parseInt(Math.random()*900);
+			ball.style.width = parseInt(Math.random()*50+50) +'px';
+		ball.style.height = ball.style.width;
+		ball.style.top = top +'px';
+			ball.style.left = left +'px';
+				var x = 5;
+				var y = 8;
+				
+				running = setInterval(function(){
+					top += y ;
+					left += x;
+					if(top < 0  || top> (ballbox.offsetHeight - ball.offsetHeight)){
+						y = -y ;
+					}
+					if(left< 0 || left> (ballbox.offsetWidth - ball.offsetWidth)){
+						x = -x;
+					}
+				
+					ball.style.top = top +'px';
+					ball.style.left = left +'px';
+				},100)
+
+			}
+			//清除球
+			clearBtn.onclick = function (){
+			 var balls = document.getElementsByClassName('ball');
+				clearInterval(timer);
+				auto.style.backgroundColor ='#00ACC1';
+				auto.value ='Start';
+				flag = true;
+				while(balls.length != 0){
+				balls.length-- ;
+					ballbox.removeChild(ballbox.children[0]);
+				}
+			}
+			
+			//弹出操作按钮
+			var btns =document.getElementById('btns');
+			var flag2 = true;
+		function ballBtn(){
+				if(!flag2){
+					btns.style.transform = 'translateX(0px)';
+					flag2 = true;
+					
+				}else{
+					btns.style.transform = 'translateX(65px)';
+				
+					flag2 = false;
+				}
+			}
+
+		</script>
+ </body>
+</html>

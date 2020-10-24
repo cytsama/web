@@ -1,0 +1,41 @@
+ .ballbox{
+      position:absolute;
+      width:1180px;
+      height:500px;
+	  top:60px;
+	  left:65px;
+	  z-index:-100;  
+	  transition:all .3s;
+	  }
+	  .ballBtns{
+		position:absolute;
+		width: 65px;
+		height: 100px;
+		top: 80px;
+		left: -65px;
+		z-index:9999;
+		transition:all .3s;
+	  }
+ .ball{
+      position:absolute;
+      border-radius:50%;
+	  opacity:.8;
+	 
+    }
+ .clear_btn,.auto_btn{
+      position:absolute;
+      width:65px;
+      height:40px;
+      top:60px;
+      left:0px;
+	  font-size:20px;
+	  line-height:40px;
+	  text-align:center;
+      cursor:pointer;
+	  background-color:#76FF03;
+	  border:0;
+    }
+	.auto_btn{
+		top:0px;
+		background-color:#00ACC1;
+	}
